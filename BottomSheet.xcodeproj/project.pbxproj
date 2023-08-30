@@ -9,19 +9,31 @@
 /* Begin PBXBuildFile section */
 		F88ABACB2A9F61AD005239D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABACA2A9F61AD005239D1 /* AppDelegate.swift */; };
 		F88ABACD2A9F61AD005239D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABACC2A9F61AD005239D1 /* SceneDelegate.swift */; };
-		F88ABACF2A9F61AD005239D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABACE2A9F61AD005239D1 /* ViewController.swift */; };
 		F88ABAD42A9F61AF005239D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88ABAD32A9F61AF005239D1 /* Assets.xcassets */; };
 		F88ABAD72A9F61AF005239D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F88ABAD52A9F61AF005239D1 /* LaunchScreen.storyboard */; };
+		F88ABAE02A9F68AC005239D1 /* BottomSheetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABADF2A9F68AC005239D1 /* BottomSheetTableViewController.swift */; };
+		F88ABAE52A9F76D2005239D1 /* BottomSheetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABAE42A9F76D2005239D1 /* BottomSheetTableViewCell.swift */; };
+		F88ABAE72A9F7744005239D1 /* BottomSheetTableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABAE62A9F7744005239D1 /* BottomSheetTableViewPresenter.swift */; };
+		F88ABAE92A9F79B8005239D1 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABAE82A9F79B8005239D1 /* CarModel.swift */; };
+		F88ABAEB2A9F7C00005239D1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABAEA2A9F7C00005239D1 /* NetworkService.swift */; };
+		F88ABAF02A9F92A5005239D1 /* AssemblyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABAEF2A9F92A5005239D1 /* AssemblyBuilder.swift */; };
+		F88ABAF32A9FB449005239D1 /* carModel.json in Resources */ = {isa = PBXBuildFile; fileRef = F88ABAEE2A9F828D005239D1 /* carModel.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F88ABAC72A9F61AD005239D1 /* ButtomSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtomSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F88ABAC72A9F61AD005239D1 /* BottomSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BottomSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88ABACA2A9F61AD005239D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F88ABACC2A9F61AD005239D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F88ABACE2A9F61AD005239D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F88ABAD32A9F61AF005239D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F88ABAD62A9F61AF005239D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F88ABAD82A9F61AF005239D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F88ABADF2A9F68AC005239D1 /* BottomSheetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTableViewController.swift; sourceTree = "<group>"; };
+		F88ABAE42A9F76D2005239D1 /* BottomSheetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTableViewCell.swift; sourceTree = "<group>"; };
+		F88ABAE62A9F7744005239D1 /* BottomSheetTableViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTableViewPresenter.swift; sourceTree = "<group>"; };
+		F88ABAE82A9F79B8005239D1 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		F88ABAEA2A9F7C00005239D1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F88ABAEE2A9F828D005239D1 /* carModel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = carModel.json; sourceTree = "<group>"; };
+		F88ABAEF2A9F92A5005239D1 /* AssemblyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +50,7 @@
 		F88ABABE2A9F61AD005239D1 = {
 			isa = PBXGroup;
 			children = (
-				F88ABAC92A9F61AD005239D1 /* ButtomSheet */,
+				F88ABAC92A9F61AD005239D1 /* BottomSheet */,
 				F88ABAC82A9F61AD005239D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +58,108 @@
 		F88ABAC82A9F61AD005239D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F88ABAC72A9F61AD005239D1 /* ButtomSheet.app */,
+				F88ABAC72A9F61AD005239D1 /* BottomSheet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F88ABAC92A9F61AD005239D1 /* ButtomSheet */ = {
+		F88ABAC92A9F61AD005239D1 /* BottomSheet */ = {
 			isa = PBXGroup;
 			children = (
 				F88ABACA2A9F61AD005239D1 /* AppDelegate.swift */,
 				F88ABACC2A9F61AD005239D1 /* SceneDelegate.swift */,
-				F88ABACE2A9F61AD005239D1 /* ViewController.swift */,
-				F88ABAD32A9F61AF005239D1 /* Assets.xcassets */,
 				F88ABAD52A9F61AF005239D1 /* LaunchScreen.storyboard */,
+				F88ABAF62A9FB5A5005239D1 /* Services */,
+				F88ABAF42A9FB4F9005239D1 /* Assembly */,
+				F88ABADE2A9F6835005239D1 /* Module */,
+				F88ABAF82A9FB5C0005239D1 /* SupportingFiles */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
+		F88ABADE2A9F6835005239D1 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				F88ABAE22A9F68E9005239D1 /* Model */,
+				F88ABAE12A9F68E3005239D1 /* View */,
+				F88ABAE32A9F68EF005239D1 /* Presenter */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		F88ABAE12A9F68E3005239D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F88ABADF2A9F68AC005239D1 /* BottomSheetTableViewController.swift */,
+				F88ABAF52A9FB521005239D1 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F88ABAE22A9F68E9005239D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F88ABAE82A9F79B8005239D1 /* CarModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F88ABAE32A9F68EF005239D1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F88ABAE62A9F7744005239D1 /* BottomSheetTableViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F88ABAF42A9FB4F9005239D1 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F88ABAEF2A9F92A5005239D1 /* AssemblyBuilder.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F88ABAF52A9FB521005239D1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F88ABAE42A9F76D2005239D1 /* BottomSheetTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F88ABAF62A9FB5A5005239D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F88ABAF72A9FB5AF005239D1 /* NetworkService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F88ABAF72A9FB5AF005239D1 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				F88ABAEA2A9F7C00005239D1 /* NetworkService.swift */,
+				F88ABAEE2A9F828D005239D1 /* carModel.json */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		F88ABAF82A9FB5C0005239D1 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F88ABAD32A9F61AF005239D1 /* Assets.xcassets */,
 				F88ABAD82A9F61AF005239D1 /* Info.plist */,
 			);
-			path = ButtomSheet;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F88ABAC62A9F61AD005239D1 /* ButtomSheet */ = {
+		F88ABAC62A9F61AD005239D1 /* BottomSheet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F88ABADB2A9F61AF005239D1 /* Build configuration list for PBXNativeTarget "ButtomSheet" */;
+			buildConfigurationList = F88ABADB2A9F61AF005239D1 /* Build configuration list for PBXNativeTarget "BottomSheet" */;
 			buildPhases = (
 				F88ABAC32A9F61AD005239D1 /* Sources */,
 				F88ABAC42A9F61AD005239D1 /* Frameworks */,
@@ -79,9 +169,9 @@
 			);
 			dependencies = (
 			);
-			name = ButtomSheet;
+			name = BottomSheet;
 			productName = ButtomSheet;
-			productReference = F88ABAC72A9F61AD005239D1 /* ButtomSheet.app */;
+			productReference = F88ABAC72A9F61AD005239D1 /* BottomSheet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +189,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F88ABAC22A9F61AD005239D1 /* Build configuration list for PBXProject "ButtomSheet" */;
+			buildConfigurationList = F88ABAC22A9F61AD005239D1 /* Build configuration list for PBXProject "BottomSheet" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +202,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F88ABAC62A9F61AD005239D1 /* ButtomSheet */,
+				F88ABAC62A9F61AD005239D1 /* BottomSheet */,
 			);
 		};
 /* End PBXProject section */
@@ -122,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88ABAF32A9FB449005239D1 /* carModel.json in Resources */,
 				F88ABAD72A9F61AF005239D1 /* LaunchScreen.storyboard in Resources */,
 				F88ABAD42A9F61AF005239D1 /* Assets.xcassets in Resources */,
 			);
@@ -134,8 +225,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F88ABACF2A9F61AD005239D1 /* ViewController.swift in Sources */,
+				F88ABAE92A9F79B8005239D1 /* CarModel.swift in Sources */,
+				F88ABAF02A9F92A5005239D1 /* AssemblyBuilder.swift in Sources */,
+				F88ABAEB2A9F7C00005239D1 /* NetworkService.swift in Sources */,
+				F88ABAE72A9F7744005239D1 /* BottomSheetTableViewPresenter.swift in Sources */,
 				F88ABACB2A9F61AD005239D1 /* AppDelegate.swift in Sources */,
+				F88ABAE02A9F68AC005239D1 /* BottomSheetTableViewController.swift in Sources */,
+				F88ABAE52A9F76D2005239D1 /* BottomSheetTableViewCell.swift in Sources */,
 				F88ABACD2A9F61AD005239D1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,12 +373,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 69V683996A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ButtomSheet/Info.plist;
+				INFOPLIST_FILE = BottomSheet/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,12 +403,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 69V683996A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ButtomSheet/Info.plist;
+				INFOPLIST_FILE = BottomSheet/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,7 +427,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F88ABAC22A9F61AD005239D1 /* Build configuration list for PBXProject "ButtomSheet" */ = {
+		F88ABAC22A9F61AD005239D1 /* Build configuration list for PBXProject "BottomSheet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F88ABAD92A9F61AF005239D1 /* Debug */,
@@ -342,7 +436,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F88ABADB2A9F61AF005239D1 /* Build configuration list for PBXNativeTarget "ButtomSheet" */ = {
+		F88ABADB2A9F61AF005239D1 /* Build configuration list for PBXNativeTarget "BottomSheet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F88ABADC2A9F61AF005239D1 /* Debug */,
