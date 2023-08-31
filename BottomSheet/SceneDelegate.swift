@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AssemblyBuilder
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -15,7 +16,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let mainViewController = AssemblyModuleBuilder.createTableViewModule()
+        let assembly = AssemblyBuilder()
+        let mainViewController = assembly.createTableViewModule()
         let navigationController = UINavigationController(rootViewController: mainViewController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

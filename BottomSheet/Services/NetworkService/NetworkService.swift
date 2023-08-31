@@ -6,13 +6,10 @@
 //
 
 import Foundation
-
-protocol NetworkServiceProtocol {
-    func fetchCars(completion: @escaping (Result<[CarModel]?, Error>) -> Void)
-}
+import NetworkService
 
 final class NetworkService: NetworkServiceProtocol {
-    func fetchCars(completion: @escaping (Result<[CarModel]?, Error>) -> Void) {
+    public func fetchCars<T: Decodable>(completion: @escaping (Result<[T]?, Error>) -> Void) {
         guard let url = Bundle.main.url(forResource: "carModel", withExtension: "json") else {
             print("Failed to find JSON file")
             return
@@ -30,12 +27,13 @@ final class NetworkService: NetworkServiceProtocol {
             }
             
             do {
-                let decodedData = try JSONDecoder().decode([CarModel].self, from: jsonData)
+                let decodedData = try JSONDecoder().decode([T].self, from: jsonData)
                 completion(.success(decodedData))
-                print(decodedData)
             } catch {
                 completion(.failure(error))
             }
         }.resume()
     }
 }
+
+

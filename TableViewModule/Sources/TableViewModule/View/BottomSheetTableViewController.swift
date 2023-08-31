@@ -7,21 +7,13 @@
 
 import UIKit
 
-protocol BottomSheetTableViewProtocol: AnyObject {
-    ///Обновление данных в таблице, при успешном получении данных из сети.
-    func success()
-    
-    ///Вывод описания ошибки на консоль, при ошибочной загрузке данных из сети.
-    func failure(error: Error)
-}
-
-final class BottomSheetTableViewController: UITableViewController {
+public final class BottomSheetTableViewController: UITableViewController {
     
     //MARK: - Public properties
-    var presenter: BottomSheetTableViewPresenterProtocol!
+    public var presenter: BottomSheetTableViewPresenter?
     
     // MARK: - LifeCycle Methods
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(
             BottomSheetTableViewCell.self,
@@ -30,21 +22,21 @@ final class BottomSheetTableViewController: UITableViewController {
     }
     
     // MARK: - UITableViewDataSource
-    override func tableView(
+    public override func tableView(
         _ tableView: UITableView,
         heightForRowAt indexPath: IndexPath
     ) -> CGFloat {
         return 326
     }
     
-    override func tableView(
+    public override func tableView(
         _ tableView: UITableView,
         numberOfRowsInSection section: Int
     ) -> Int {
-        return presenter.numberOfRows()
+        return presenter?.numberOfRows() ?? 0
     }
     
-    override func tableView(
+    public override func tableView(
         _ tableView: UITableView,
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
@@ -55,7 +47,7 @@ final class BottomSheetTableViewController: UITableViewController {
         
         guard
             let tableViewCell = cell,
-            let carModel = presenter.carModel?[indexPath.row]
+            let carModel = presenter?.carModel?[indexPath.row]
         else { return UITableViewCell() }
         tableViewCell.configure(with: carModel)
         
@@ -63,11 +55,14 @@ final class BottomSheetTableViewController: UITableViewController {
     }
 }
 
-extension BottomSheetTableViewController: BottomSheetTableViewProtocol {
+    // MARK: - Extension
+extension BottomSheetTableViewController {
+    ///Обновление данных таблице, при успешном получении данных из сети.
     func success() {
         tableView.reloadData()
     }
     
+    ///Вывод описания ошибки на консоль, при ошибочной загрузке данных из сети.
     func failure(error: Error) {
         print(error.localizedDescription)
     }
