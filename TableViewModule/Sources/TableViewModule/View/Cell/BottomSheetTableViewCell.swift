@@ -8,11 +8,12 @@
 import UIKit
 
 final class BottomSheetTableViewCell: UITableViewCell {
-    
     //MARK: - Static properties
+    ///Идентификатор ячецки
     static let identifier = "CarTableViewCell"
     
     //MARK: - Private properties
+    ///Лейбл с названием модели автомобиля
     private let carNameLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -22,6 +23,7 @@ final class BottomSheetTableViewCell: UITableViewCell {
         return label
     }()
     
+    ///Лейбл с описанием модели автомобиля
     private let descriptionLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -30,6 +32,7 @@ final class BottomSheetTableViewCell: UITableViewCell {
         return label
     }()
     
+    ///Картинка с рейтингом автомобиля (количество "звезд")
     private let ratingImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -39,6 +42,7 @@ final class BottomSheetTableViewCell: UITableViewCell {
         return imageView
     }()
     
+    ///Лейбл с числовым значением рейтинга автомобиля
     private let ratingLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -47,6 +51,7 @@ final class BottomSheetTableViewCell: UITableViewCell {
         return label
     }()
     
+    ///Лейбл с количетвом оценок автомобиля
     private let ratingCountLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -55,6 +60,7 @@ final class BottomSheetTableViewCell: UITableViewCell {
         return label
     }()
     
+    ///Лейбл с ценой автомобиля в сутки
     private let priceLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -63,6 +69,7 @@ final class BottomSheetTableViewCell: UITableViewCell {
         return label
     }()
     
+    ///Кнопка "Забронировать автомобиль"
     private let bookButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -74,6 +81,7 @@ final class BottomSheetTableViewCell: UITableViewCell {
         return button
     }()
     
+    ///Кнопка добавления автомобиля в избранное
     private let likeButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -82,12 +90,12 @@ final class BottomSheetTableViewCell: UITableViewCell {
         return button
     }()
     
+    ///Кнопка удаления автомобиля из списка
     private let deleteButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.clipsToBounds = true
         button.setImage(UIImage(named: "Delete"), for: .normal)
-        
         return button
     }()
     
@@ -103,6 +111,9 @@ final class BottomSheetTableViewCell: UITableViewCell {
     }
     
     // MARK: - Public methods
+    ///Конфигурация ячейки с помощью данных модели CarModel
+    /// - Parameters:
+    ///   - car: модель данных CarModel
     func configure(with car: CarModel) {
         carNameLabel.text = car.carName
         descriptionLabel.text = car.description
@@ -112,6 +123,7 @@ final class BottomSheetTableViewCell: UITableViewCell {
     }
     
     // MARK: - Private methods
+    ///Установка констрейнтов для элементов ячейки
     private func setUpConstraints() {
         contentView.addSubview(carNameLabel)
         contentView.addSubview(descriptionLabel)

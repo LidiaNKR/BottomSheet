@@ -9,31 +9,25 @@
 /* Begin PBXBuildFile section */
 		F88ABACB2A9F61AD005239D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABACA2A9F61AD005239D1 /* AppDelegate.swift */; };
 		F88ABACD2A9F61AD005239D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABACC2A9F61AD005239D1 /* SceneDelegate.swift */; };
-		F88ABAD42A9F61AF005239D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88ABAD32A9F61AF005239D1 /* Assets.xcassets */; };
 		F88ABAD72A9F61AF005239D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F88ABAD52A9F61AF005239D1 /* LaunchScreen.storyboard */; };
-		F88ABAE02A9F68AC005239D1 /* BottomSheetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABADF2A9F68AC005239D1 /* BottomSheetTableViewController.swift */; };
-		F88ABAE52A9F76D2005239D1 /* BottomSheetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABAE42A9F76D2005239D1 /* BottomSheetTableViewCell.swift */; };
-		F88ABAE72A9F7744005239D1 /* BottomSheetTableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABAE62A9F7744005239D1 /* BottomSheetTableViewPresenter.swift */; };
-		F88ABAE92A9F79B8005239D1 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABAE82A9F79B8005239D1 /* CarModel.swift */; };
 		F88ABAEB2A9F7C00005239D1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABAEA2A9F7C00005239D1 /* NetworkService.swift */; };
-		F88ABAF02A9F92A5005239D1 /* AssemblyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABAEF2A9F92A5005239D1 /* AssemblyBuilder.swift */; };
 		F88ABAF32A9FB449005239D1 /* carModel.json in Resources */ = {isa = PBXBuildFile; fileRef = F88ABAEE2A9F828D005239D1 /* carModel.json */; };
+		F88ABB0A2A9FF1E0005239D1 /* TableViewModule in Frameworks */ = {isa = PBXBuildFile; productRef = F88ABB092A9FF1E0005239D1 /* TableViewModule */; };
+		F88ABB112AA002EC005239D1 /* AssemblyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ABB102AA002EC005239D1 /* AssemblyBuilder.swift */; };
+		F88ABB142AA03BA0005239D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88ABB132AA03BA0005239D1 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F88ABAC72A9F61AD005239D1 /* BottomSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BottomSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88ABACA2A9F61AD005239D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F88ABACC2A9F61AD005239D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F88ABAD32A9F61AF005239D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F88ABAD62A9F61AF005239D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F88ABAD82A9F61AF005239D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F88ABADF2A9F68AC005239D1 /* BottomSheetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTableViewController.swift; sourceTree = "<group>"; };
-		F88ABAE42A9F76D2005239D1 /* BottomSheetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTableViewCell.swift; sourceTree = "<group>"; };
-		F88ABAE62A9F7744005239D1 /* BottomSheetTableViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTableViewPresenter.swift; sourceTree = "<group>"; };
-		F88ABAE82A9F79B8005239D1 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
 		F88ABAEA2A9F7C00005239D1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		F88ABAEE2A9F828D005239D1 /* carModel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = carModel.json; sourceTree = "<group>"; };
-		F88ABAEF2A9F92A5005239D1 /* AssemblyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilder.swift; sourceTree = "<group>"; };
+		F88ABB032A9FC10D005239D1 /* TableViewModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TableViewModule; sourceTree = "<group>"; };
+		F88ABB102AA002EC005239D1 /* AssemblyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilder.swift; sourceTree = "<group>"; };
+		F88ABB132AA03BA0005239D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88ABB0A2A9FF1E0005239D1 /* TableViewModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +46,9 @@
 			isa = PBXGroup;
 			children = (
 				F88ABAC92A9F61AD005239D1 /* BottomSheet */,
+				F88ABB022A9FC10D005239D1 /* Packages */,
 				F88ABAC82A9F61AD005239D1 /* Products */,
+				F88ABB042A9FC1A2005239D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,63 +66,11 @@
 				F88ABACA2A9F61AD005239D1 /* AppDelegate.swift */,
 				F88ABACC2A9F61AD005239D1 /* SceneDelegate.swift */,
 				F88ABAD52A9F61AF005239D1 /* LaunchScreen.storyboard */,
+				F88ABB122AA02E01005239D1 /* AssemblyBuilder */,
 				F88ABAF62A9FB5A5005239D1 /* Services */,
-				F88ABAF42A9FB4F9005239D1 /* Assembly */,
-				F88ABADE2A9F6835005239D1 /* Module */,
 				F88ABAF82A9FB5C0005239D1 /* SupportingFiles */,
 			);
 			path = BottomSheet;
-			sourceTree = "<group>";
-		};
-		F88ABADE2A9F6835005239D1 /* Module */ = {
-			isa = PBXGroup;
-			children = (
-				F88ABAE22A9F68E9005239D1 /* Model */,
-				F88ABAE12A9F68E3005239D1 /* View */,
-				F88ABAE32A9F68EF005239D1 /* Presenter */,
-			);
-			path = Module;
-			sourceTree = "<group>";
-		};
-		F88ABAE12A9F68E3005239D1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F88ABADF2A9F68AC005239D1 /* BottomSheetTableViewController.swift */,
-				F88ABAF52A9FB521005239D1 /* Cell */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F88ABAE22A9F68E9005239D1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F88ABAE82A9F79B8005239D1 /* CarModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F88ABAE32A9F68EF005239D1 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				F88ABAE62A9F7744005239D1 /* BottomSheetTableViewPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		F88ABAF42A9FB4F9005239D1 /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				F88ABAEF2A9F92A5005239D1 /* AssemblyBuilder.swift */,
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
-		F88ABAF52A9FB521005239D1 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				F88ABAE42A9F76D2005239D1 /* BottomSheetTableViewCell.swift */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		F88ABAF62A9FB5A5005239D1 /* Services */ = {
@@ -148,10 +93,33 @@
 		F88ABAF82A9FB5C0005239D1 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				F88ABAD32A9F61AF005239D1 /* Assets.xcassets */,
+				F88ABB132AA03BA0005239D1 /* Assets.xcassets */,
 				F88ABAD82A9F61AF005239D1 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F88ABB022A9FC10D005239D1 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				F88ABB032A9FC10D005239D1 /* TableViewModule */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		F88ABB042A9FC1A2005239D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F88ABB122AA02E01005239D1 /* AssemblyBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				F88ABB102AA002EC005239D1 /* AssemblyBuilder.swift */,
+			);
+			path = AssemblyBuilder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +138,9 @@
 			dependencies = (
 			);
 			name = BottomSheet;
+			packageProductDependencies = (
+				F88ABB092A9FF1E0005239D1 /* TableViewModule */,
+			);
 			productName = ButtomSheet;
 			productReference = F88ABAC72A9F61AD005239D1 /* BottomSheet.app */;
 			productType = "com.apple.product-type.application";
@@ -213,8 +184,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F88ABAF32A9FB449005239D1 /* carModel.json in Resources */,
+				F88ABB142AA03BA0005239D1 /* Assets.xcassets in Resources */,
 				F88ABAD72A9F61AF005239D1 /* LaunchScreen.storyboard in Resources */,
-				F88ABAD42A9F61AF005239D1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +196,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F88ABAE92A9F79B8005239D1 /* CarModel.swift in Sources */,
-				F88ABAF02A9F92A5005239D1 /* AssemblyBuilder.swift in Sources */,
 				F88ABAEB2A9F7C00005239D1 /* NetworkService.swift in Sources */,
-				F88ABAE72A9F7744005239D1 /* BottomSheetTableViewPresenter.swift in Sources */,
 				F88ABACB2A9F61AD005239D1 /* AppDelegate.swift in Sources */,
-				F88ABAE02A9F68AC005239D1 /* BottomSheetTableViewController.swift in Sources */,
-				F88ABAE52A9F76D2005239D1 /* BottomSheetTableViewCell.swift in Sources */,
 				F88ABACD2A9F61AD005239D1 /* SceneDelegate.swift in Sources */,
+				F88ABB112AA002EC005239D1 /* AssemblyBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +413,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F88ABB092A9FF1E0005239D1 /* TableViewModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TableViewModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F88ABABF2A9F61AD005239D1 /* Project object */;
 }
